@@ -1,0 +1,56 @@
+
+/* ------------- HEADER ------------- */
+header {
+    
+}
+
+
+
+
+
+
+/*  ------------- NAV -------------  */
+nav {
+	.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav .icon {
+    display: none;
+}
+} // end nav
+
+
+
+
+
+/* ------------- MAIN ------------- */
+main {
+
+    figure {
+        
+    }
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .large-#{$i} {width: $w; float: left;}
+    }
+    .space {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

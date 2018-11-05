@@ -1,0 +1,58 @@
+
+
+
+
+
+/* ------------- HEADER ------------- */
+header {
+.search-bar {
+        bottom: $gutterdbl;
+    }
+}
+
+nav {
+	.topnav a {
+    display: block;
+}
+.topnav .icon {
+    display: none;
+}
+} // end nav
+
+
+/* ------------- MAIN ------------- */
+main {
+    max-width: 100em;
+    margin: 0 auto;
+
+    figure {
+        
+    }
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .medium-#{$i} {width: $w; float: left;}
+    }
+    .space {
+        display: none;
+    }
+    
+    .space-2 {
+        display: none;
+    }
+    
+    .lawer-card {
+        margin-top: $gutterdbl;
+    }
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

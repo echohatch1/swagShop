@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Law Firm | Attorneys</title>
+
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+     
+</head>
+<body>
+<!-- HEADER STARTS HERE -->
+	<header>
+        <div class="header-div">
+        
+    	<h1>Hatch and Associates</h1>
+    	<h2>Here to Help</h2>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="search..."/>
+            </div>
+            
+        </div>
+    </header>
+    
+<!-- NAV STARTS HERE -->
+	<nav>
+        <div class="topnav" id="myTopnav">
+            <a></a>
+  <a href="#">Home</a>
+  <a href="#" class="active">Attorneys</a>
+  <a href="#">Practices</a>
+  <a href="#">About</a>
+  <a href="#">News</a>
+  <a href="#">Links</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</nav>
+    
+    
+<!-- MAIN STARTS HERE -->
+	<main class="clearfix">
+        <div id="main-div">
+        
+    <div id="form">
+<form action="sendData.php" method="POST" enctype="multipart/form-data" class="myForm" name="myForm">
+
+    <h1>Add Employee</h1>
+<section id="first-name" class="normal">
+<label ><span>First Name</span>
+	<input name="firstName" type="text" class="myInput" required placeholder = "first" autofocus>
+</label>
+</section>
+    
+<section id="last-name" class="normal">
+<label ><span>Last Name</span>
+	<input name="lastName" type="text" class="myInput" required placeholder = "last" autofocus>
+</label>
+</section>
+    
+<section id="phone" class="normal">
+<label ><span>Phone</span>
+	<input name="phone" class="myInput" required minlength="10" maxlength="12" placeholder = "0000000000" autofocus>
+</label>
+</section>
+	
+<section id="department" class="normal">
+<label ><span>Department</span>
+	<select name="department" class="myInput" required>
+		<option value="">Please Select</option>
+		<option value="HR">Human Resources (HR)</option>
+		<option value="IT">Internet Technologies (IT)</option>
+		<option value="CS">Customer Service (CS)</option>
+	</select>
+    </label>
+    </section>
+	
+<section id="photo" class="normal">
+<label ><span>Photo</span>
+	<hr>
+	<p>Upload a .jpg .png or .gif file</p>
+	<input type="file" name="image" required autofocus>
+	<p>*Must be 150 x 200 Pixels</p>
+	<hr>
+</label>
+</section>
+    
+
+<input type="submit" value="Add Employee" id="submitButton" class="submitButton">
+
+</form>
+    </div>
+            
+            
+
+            
+    </div>
+        </main>
+    
+
+
+        <!-- FOOTER STARTS HERE -->  
+    <footer>
+    <div>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-google-plus-square"></i>
+    </div>
+    </footer>
+    
+
+    <script src="js/main.js"></script>
+    
+    
+</body>    
+</html>
