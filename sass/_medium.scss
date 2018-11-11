@@ -5,9 +5,7 @@
 
 /* ------------- HEADER ------------- */
 header {
-.search-bar {
-        bottom: $gutterdbl;
-    }
+
 }
 
 nav {
@@ -25,25 +23,21 @@ main {
     max-width: 100em;
     margin: 0 auto;
 
-    figure {
+    .form {
+        form {
         
+            .form-section {
+                section {
+                    margin: 0;
+                }
+            }
+            .submit-div {
+                display: block;
+                max-width: 350px;
+                margin: 0;
+            }
+        }
     }
-    @for $i from 1 through 12 {
-        $w: ($i / 12) * 100%;
-        .medium-#{$i} {width: $w; float: left;}
-    }
-    .space {
-        display: none;
-    }
-    
-    .space-2 {
-        display: none;
-    }
-    
-    .lawer-card {
-        margin-top: $gutterdbl;
-    }
-    
 
 
     

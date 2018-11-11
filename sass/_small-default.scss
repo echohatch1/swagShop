@@ -11,20 +11,7 @@ body {
 	font-weight: $normalWeight;
     min-height: 100%;
     position: relative;
-    button {
-        background-color: $secondaryColor;
-        height: 30px;
-        border-radius: 8px;
-        border: none;
-        margin-top: $gutterdbl;
-        margin-bottom: $gutterdbl;
-        color: $fontColor;
-    }
-    button:hover {
-        background-color: lighten($secondaryColor, 30%);
-        color: $primaryColor;
-        cursor: pointer;
-}
+    width: 100%;
 
     input {
         border-radius: 2px;
@@ -67,13 +54,7 @@ header {
         
     } //end h2
     
-/* -------- search bar -------------- */
-    .search-bar {
-        width: 180px;
-        position: absolute;
-        bottom: -32px;
-        right: 0;
-    }
+    
 } //end header
 
 
@@ -122,6 +103,56 @@ nav {
     text-align: left;
     padding: 14px 16px;
   }
+    
+//dropdown
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    float: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: $primaryColor;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $primaryColor;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: $fontColor;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    
 } // end nav
 
 
@@ -133,6 +164,7 @@ main {
     display: block;
     float: left;
     clear: both;
+    width: 100%;
     #main-div {
         margin-bottom: $gutterdbl;
         
@@ -142,6 +174,7 @@ main {
 		font-size: 2rem;
 		margin-top: 1rem;
 		color: $primaryColor;
+        margin-left: $gutter;
 	} // end h1
 	
 	h2 {
@@ -186,64 +219,70 @@ form.myForm .myInput {
     padding-right: 10px;
 }
 
-form.myForm .submitButton {
-	border-radius: 20px;
-	background: red;
-	color: white;
-	border: none;
-	width: 70%;
-	padding: .5rem;
-	text-align: center;
-	font-size: 1rem;
-    display: block;
-    margin: auto;
-}
-
-form {
-    background-color: #e0e2e5;
-    display: block;
-    border: 2px solid #666;
-    border-radius: 20px;
-    padding: 10px;
-    padding-top: 0px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	margin-bottom: 20px;
-    overflow: hidden;
-    background-color: red;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
-
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: rosybrown;
-}
+    .form {
+        max-width: $maxWidth;
+        
+        form {
+        margin: $gutterdbl;
+            .form-section {
+                display: block;
+                border: 1px solid #666;
+                border-radius: 20px;
+                padding: 10px;
+                padding-top: 0px;
+                margin-top: $gutterdbl * 2;
+                .section-heading {
+                    display: block;
+                    background: $altColor;
+                    position: relative;
+                    bottom: 1rem;
+                    margin-left: $gutterdbl;
+                    width: 200px;
+                    padding-top: $gutter;
+                    padding-bottom: $gutter;
+                    h3 {
+                        text-align: center;
+                        color: $fontColor;
+                    }
+                }
+                section {
+                    display: block;
+                    max-width: 350px;
+                    margin: auto;
+                    
+                }
+            }
+            .submit-div {
+                display: block;
+                max-width: 350px;
+                margin: auto;
+                .submitButton {
+                            border-radius: 20px;
+                            background-color: red;
+                            color: white;
+                            border: none;
+                            width: 200px;
+                            padding: .5rem;
+                            text-align: center;
+                            font-size: 1rem;
+                            display: block;
+                            margin: auto;
+                            margin-top: $gutterdbl * 2;
+                        }
     
-
-
-
+                        .submitButton:hover {
+                            background-color: lighten(red, 20%);
+                            cursor: pointer;
+                    }
+            }
+        }
+    }
     
-
-    
-    
-    
+#material {
+    input {
+            margin: $gutter;
+        }
+} 
        
 } // end main
 

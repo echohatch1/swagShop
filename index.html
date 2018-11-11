@@ -24,10 +24,6 @@
     	<h1>Hatch and Associates</h1>
     	<h2>Here to Help</h2>
             
-            <div class="search-bar">
-                <input type="text" placeholder="search..."/>
-            </div>
-            
         </div>
     </header>
     
@@ -41,63 +37,138 @@
   <a href="#">About</a>
   <a href="#">News</a>
   <a href="#">Links</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
+        
 	</nav>
     
     
 <!-- MAIN STARTS HERE -->
 	<main class="clearfix">
         <div id="main-div">
+            
+    <h1>Order</h1>
         
-    <div id="form">
+    <div class="form">
+        
 <form action="sendData.php" method="POST" enctype="multipart/form-data" class="myForm" name="myForm">
-
-    <h1>Add Employee</h1>
-<section id="first-name" class="normal">
-<label ><span>First Name</span>
-	<input name="firstName" type="text" class="myInput" required placeholder = "first" autofocus>
-</label>
-</section>
     
-<section id="last-name" class="normal">
-<label ><span>Last Name</span>
-	<input name="lastName" type="text" class="myInput" required placeholder = "last" autofocus>
+    <div class="form-section">
+        
+        <div class="section-heading">
+        <h3>Customer Information</h3>
+        </div>
+
+<section id="full-name" class="normal">
+<label ><span>Full Name*</span>
+	<input name="fullName" type="text" class="myInput" required placeholder = "" autofocus>
 </label>
 </section>
     
 <section id="phone" class="normal">
-<label ><span>Phone</span>
-	<input name="phone" class="myInput" required minlength="10" maxlength="12" placeholder = "0000000000" autofocus>
+<label ><span>Phone*</span>
+	<input name="phone" type="text" class="myInput" required placeholder = "" autofocus>
 </label>
 </section>
-	
-<section id="department" class="normal">
-<label ><span>Department</span>
-	<select name="department" class="myInput" required>
-		<option value="">Please Select</option>
-		<option value="HR">Human Resources (HR)</option>
-		<option value="IT">Internet Technologies (IT)</option>
-		<option value="CS">Customer Service (CS)</option>
-	</select>
-    </label>
-    </section>
-	
-<section id="photo" class="normal">
-<label ><span>Photo</span>
-	<hr>
-	<p>Upload a .jpg .png or .gif file</p>
-	<input type="file" name="image" required autofocus>
-	<p>*Must be 150 x 200 Pixels</p>
-	<hr>
+        
+<section id="email" class="normal">
+<label ><span>Email*</span>
+	<input name="email" type="text" class="myInput" required placeholder = "" autofocus>
 </label>
 </section>
     
+    </div>
+        <div class="form-section">
+            
+        <div class="section-heading">
+        <h3>Swag Information</h3>
+        </div>
+            
+<section id="date" class="normal">
+<label ><span>Date Needed</span>
+	<input name="date" type="text" class="myInput" required placeholder = "" autofocus>
+</label>
+</section>
+    
+<section id="business" class="normal">
+<label ><span>Business Name</span>
+	<input name="business" class="myInput" placeholder = "" autofocus>
+</label>
+</section>
+            
+<section id="business-url" class="normal">
+<label ><span>Business URL</span>
+	<input name="business-url" class="myInput" placeholder = "" autofocus>
+</label>
+</section>
+	
+<section id="color" class="normal">
+<label ><span>Color</span>
+	<select name="color" class="myInput" required>
+		<option value="">Please Select</option>
+		<option value="red">Red</option>
+		<option value="white">White</option>
+		<option value="blue">Blue</option>
+	</select>
+    </label>
+    </section>
+            
+<section id="quantity" class="normal">
+<label ><span>Quantity</span>
+	<input name="quantity" class="myInput" placeholder = "" autofocus>
+</label>
+</section>
+            
+<section id="material" class="normal">
+<label><span>Material</span><br>
+<input type="radio" name="material" value="aluminium"> Aluminium<br>
+<input type="radio" name="material" value="plastic"> Plastic<br>
+</label>
+</section>
+            
+        </div>
+        <div class="form-section">
+            
+        <div class="section-heading">
+        <h3>Payment Information</h3>
+        </div>
 
-<input type="submit" value="Add Employee" id="submitButton" class="submitButton">
+<section id="name-card" class="normal">
+<label ><span>Name on Card*</span>
+	<input name="name-card" class="myInput" required placeholder = "" autofocus>
+</label>
+</section>
+            
+<section id="card-number" class="normal">
+<label ><span>Card Number*</span>
+	<input name="card-number" class="myInput" required placeholder = "" autofocus>
+</label>
+</section>
+            
+<section id="expiration-date" class="normal">
+<label ><span>Exipration Date*</span>
+	<input name="expiration-date" class="myInput" required placeholder = "" autofocus>
+</label>
+</section>
 
+            </div>
+    
+<div class="submit-div">
+<input type="submit" value="Order My Swag" id="submitButton" class="submitButton">
+</div>
+    
 </form>
     </div>
             
