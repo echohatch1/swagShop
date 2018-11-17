@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>Law Firm | Attorneys</title>
+<title>Swag Shop</title>
 
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
@@ -21,35 +21,32 @@
 	<header>
         <div class="header-div">
         
-    	<h1>Hatch and Associates</h1>
-    	<h2>Here to Help</h2>
+            <figure>
+            <img src="images/logo.png" alt="logo">
+            </figure>
             
         </div>
     </header>
     
 <!-- NAV STARTS HERE -->
 	<nav>
-        <div class="topnav" id="myTopnav">
-            <a></a>
-  <a href="#">Home</a>
-  <a href="#" class="active">Attorneys</a>
-  <a href="#">Practices</a>
-  <a href="#">About</a>
-  <a href="#">News</a>
-  <a href="#">Links</a>
+<div class="topnav" id="myTopnav">
+  <a class="hidden">L</a>
+  <a href="#" class="active">Home</a>
+  <a href="#">Products</a>
+  <a href="#">Deals</a>
   <div class="dropdown">
-    <button class="dropbtn">Dropdown 
+    <button class="dropbtn">Order 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="#">Water Bottles</a>
+      <a href="#">Hats</a>
+      <a href="#">Shirts</a>
     </div>
   </div> 
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+  <a href="#">Customer Reviews</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
         
 	</nav>
@@ -73,19 +70,19 @@
 
 <section id="full-name" class="normal">
 <label ><span>Full Name*</span>
-	<input name="fullName" type="text" class="myInput" required placeholder = "" autofocus>
+	<input name="fullName" type="text" class="myInput" required placeholder = "">
 </label>
 </section>
     
 <section id="phone" class="normal">
 <label ><span>Phone*</span>
-	<input name="phone" type="text" class="myInput" required placeholder = "" autofocus>
+	<input name="phone" type="text" class="myInput" required placeholder = "">
 </label>
 </section>
         
 <section id="email" class="normal">
-<label ><span>Email*</span>
-	<input name="email" type="text" class="myInput" required placeholder = "" autofocus>
+<label ><span>Email</span>
+	<input name="email" type="email" class="myInput" placeholder = "">
 </label>
 </section>
     
@@ -98,25 +95,25 @@
             
 <section id="date" class="normal">
 <label ><span>Date Needed</span>
-	<input name="date" type="text" class="myInput" required placeholder = "" autofocus>
+	<input name="date" type="date" class="myInput" placeholder = "">
 </label>
 </section>
     
 <section id="business" class="normal">
 <label ><span>Business Name</span>
-	<input name="business" class="myInput" placeholder = "" autofocus>
+	<input name="business" type="text" class="myInput" placeholder = "">
 </label>
 </section>
             
 <section id="business-url" class="normal">
 <label ><span>Business URL</span>
-	<input name="business-url" class="myInput" placeholder = "" autofocus>
+	<input name="business-url" type="url" class="myInput" placeholder = "">
 </label>
 </section>
 	
 <section id="color" class="normal">
 <label ><span>Color</span>
-	<select name="color" class="myInput" required>
+	<select name="color" class="myInput">
 		<option value="">Please Select</option>
 		<option value="red">Red</option>
 		<option value="white">White</option>
@@ -127,7 +124,7 @@
             
 <section id="quantity" class="normal">
 <label ><span>Quantity</span>
-	<input name="quantity" class="myInput" placeholder = "" autofocus>
+	<input name="quantity" type="number" class="myInput" placeholder = "">
 </label>
 </section>
             
@@ -147,19 +144,19 @@
 
 <section id="name-card" class="normal">
 <label ><span>Name on Card*</span>
-	<input name="name-card" class="myInput" required placeholder = "" autofocus>
+	<input name="name-card" type="text" class="myInput" required placeholder = "">
 </label>
 </section>
             
 <section id="card-number" class="normal">
 <label ><span>Card Number*</span>
-	<input name="card-number" class="myInput" required placeholder = "" autofocus>
+	<input name="card-number" type="number" class="myInput" required placeholder = "">
 </label>
 </section>
             
 <section id="expiration-date" class="normal">
 <label ><span>Exipration Date*</span>
-	<input name="expiration-date" class="myInput" required placeholder = "" autofocus>
+	<input name="expiration-date" type="date" class="myInput" required placeholder = "">
 </label>
 </section>
 
@@ -181,14 +178,13 @@
 
 
         <!-- FOOTER STARTS HERE -->  
+    <div class="footer-div">
     <footer>
     <div>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-google-plus-square"></i>
+    <p id="footer-text">©2018 Landon Hatch • <a href="www.landonhatch.com">landonhatch.com</a></p>
     </div>
     </footer>
+    </div>
     
 
     <script src="js/main.js"></script>

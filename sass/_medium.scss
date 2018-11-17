@@ -1,26 +1,19 @@
-
-
-
-
-
 /* ------------- HEADER ------------- */
-header {
 
+//nav
+.hidden {
+    width: 0;
+    height: 0;
 }
 
-nav {
-	.topnav a {
-    display: block;
+.topnav a:hover.hidden {
+    background: transparent;
 }
-.topnav .icon {
-    display: none;
-}
-} // end nav
+// end nav
 
 
 /* ------------- MAIN ------------- */
 main {
-    max-width: 100em;
     margin: 0 auto;
 
     .form {
@@ -38,15 +31,4 @@ main {
             }
         }
     }
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
